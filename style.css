@@ -1,0 +1,2352 @@
+/* ---- GLOBAL ---- */
+@font-face {
+    font-family: "Brittany Signature";
+    src:
+      url("font/BrittanySignature.ttf") format("TrueType")
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Neue";
+    box-sizing: border-box;
+}
+h3{
+    font-family: "Brittany Signature";
+}
+
+/* --------------------------------
+---------------ACCUEIL-------------
+----------------------------------- */
+
+/*--- header ---*/
+.contain1{
+    width: 100%;
+    background-color: #DFB70E;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.first{
+    width: 85%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 10px;
+    
+}
+
+.first .phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.first .map {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.first .hour {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.first h6{
+    margin: 0;
+    font-weight: bold;
+}
+
+.contain2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.second{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 10px;
+    align-items: center;
+}
+
+#menu-btn{
+    display: none; 
+}
+.menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.second .list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.second .list li{
+    list-style: none;
+}
+
+.second .list li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.dropdown-menu{
+    border: none;
+    border-radius: 0px;
+    padding: 10px !important;
+    margin-top: 5% !important;
+  }
+
+.dropdown-menu li .dropdown-item {
+ 
+    font-family: "Brittany Signature";
+    text-decoration: underline !important;
+    color: #A57014 !important;
+    font-size: 18px !important;
+    font-weight: 100 !important;
+    padding: 15px !important;
+    border-bottom:1px solid #d9d9d993 ;
+    --bs-dropdown-link-active-bg: #fff;
+    white-space: nowrap;
+}
+
+
+.second .prestation a{
+    text-decoration: none;
+    color: white;
+    background-color: #7B3C1C;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+} 
+
+.second .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* header end */
+
+
+/* ----- BANNIERE ------ */
+
+
+.carousel-inner img{
+    height: 500px;
+}
+.carousel-caption {
+    position: absolute; 
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%); 
+    color: white;
+    text-align: left; 
+    z-index: 2; 
+   
+}
+.carousel-caption .Accueiltitre{
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 8%;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 60px;
+  
+    
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  
+}
+
+/* ----- BANNIERE ------ */
+
+
+/* ----- COMMENT LOUER ? ------ */
+
+.contain4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contain4 h3{
+    font-size: 76px;
+    color: #A57014;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.contain4 .texts{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.contain4 .text {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    gap: 35px;
+}
+
+.contain4 .text img{
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contain4 .text p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ----- FIN COMMENT LOUER ? ------ */
+
+
+
+/* ----- LOCATION ------ */
+
+.contain5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contain5 h3{
+    font-size: 76px;
+    color: #A57014;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.contain5 .top{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin: 0 auto;
+    gap: 10px;
+    
+}
+
+.categorie {
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.titre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    
+}
+
+
+.titre h3{
+    font-size:48px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+.categorie .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.5)!important; 
+    z-index: 2;
+    border-radius: 5px;
+  
+}
+
+.contain5 .image img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+     
+}
+
+.contain5 .bottom{
+    display: flex;
+    justify-content: center;
+    width: 83%;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 3%;
+    
+}
+
+
+/* ----- FIN LOCATION ------ */
+
+
+/* ----- PERSONNALISATION ------ */
+
+.contain6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 83%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.contain6  h3{
+    margin-top: 10px;
+    font-size: 76px;
+    color: #A57014;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+.personnalisation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5%;
+}
+
+.article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.article .images img{
+    width: 50%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.texte{
+    width: 50%;
+    font-size: 24px;
+    font-weight: 500;
+}
+/* ----- FIN PERSONNALISATION ------ */
+
+/* ----- APPRENEZ EN PLUS SUR NOUS ------ */
+
+.contain7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 83%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.contain7  h3{
+    margin-top: 10px;
+    font-size: 76px;
+    color: #A57014;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5%;
+    /* white-space: nowrap; */
+
+}
+
+.learn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4%;
+}
+
+.image1{
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+.image1 img{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+/* ----- FIN APPRENEZ EN PLUS SUR NOUS ------ */
+
+
+/* ----- FOOTER ------ */
+
+.footer{
+    background-color: #DFB70E;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    margin-top: 10%;
+}
+
+.contain8{
+    display: flex;
+    justify-content: center;
+    width: 83%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.gauche{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 50%;
+}
+
+.gauche img{
+    width: 200px;
+}
+
+.gauche .icone img{
+    width: 24px;
+}
+
+.gauche h4 {
+    color: white;
+}
+
+.droit .phones{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.droit .phones h6{
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+.droit .maping{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 1rem;
+    
+}
+
+.droit{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.droit .maping h6{
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+.droit .hours{
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+}
+
+.droit h4{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+
+}
+
+.droit .hours h6{
+    font-weight: bold;
+    font-size: 24px;
+}
+/* ----- FIN FOOTER ------ */
+
+/* ----- RESPONSIVE TABLETTE------ */
+@media  screen and (min-width: 500px)and (max-width:1200px) {
+    .first h6{
+        font-size: 12px;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff; /* Fond du menu */
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        width: 30%;
+        z-index: 100;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        
+        
+    }
+
+    .menu.active {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .menu .list{
+        flex-direction: column;
+        align-items: start;
+       
+        
+    }
+
+    .second{
+        margin: 0 auto;
+        width: 85%;
+        
+    }
+
+    .second .logo{
+        margin-right: 54%;
+    }
+
+    .prestation {
+        margin-right: 0%;
+    }
+    .second .prestation a{
+        font-size: 12px;
+        
+        
+    }
+
+    .second .list li a{
+       
+        color: #A57014;
+        text-align: start;
+    }
+
+    .dropdown-menu {
+        position: relative !important; 
+        width: 100%; 
+        margin-top: 0% !important;
+        margin-bottom: 5px;
+        
+    }
+
+   
+    .dropdown {
+        width: 100%; 
+    }
+
+    .dropdown-menu li .dropdown-item{
+        font-family: "Brittany Signature";
+        text-decoration: underline !important;
+        color: #A57014 !important;
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        padding: 10px !important;
+        border-bottom:1px solid #d9d9d993 ;
+    }
+
+    .carousel-caption h5{
+        font-size: 32px;
+    }
+
+    .carousel-caption .location-title{
+        font-size: 48px;
+    }
+
+    .contain4 .text p{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .contain4 .text {
+        width: 30%;
+        gap: 20px;
+    }
+
+    .titre h3{
+        font-size:32px;
+        font-weight: 400;
+    }
+
+    .texte{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .contact .form h3{
+        font-size: 30px !important;
+        white-space: nowrap;
+    }
+
+    .contact .info h3{
+        font-size: 30px !important;
+    }
+
+    .perso h3{
+        text-align: start;
+        font-size: 30px !important;
+    }
+    
+    .message h3{
+        font-size: 30px !important;
+    }
+    
+    .nom input{
+        width: 100% !important;
+    }
+    
+    .number input{
+        width: 100% !important;
+    }
+    
+
+   .article{
+    margin-left: 2%;
+   }
+
+    .article .images img{
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .droit .phones h6{
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+
+    .droit .maping h6{
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+
+    .droit .hours h6{
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+    .droit h4{
+        font-size: 24px;
+    }
+
+    .gauche h4 {
+        font-size: 24px;
+    }
+
+    .gauche img{
+        width: 150px;
+    }
+
+    .gauche .icone img{
+        width:24px;
+    }
+    .image1 img{
+        object-fit: cover;
+        display: block;
+    }
+
+    .image1{
+        height: 500px;
+    }
+    
+}
+
+/* ----- FIN RESPONSIVE TABLETTE------ */
+
+/* ----- RESPONSIVE MOBILE ------ */
+@media  screen and (min-width: 360px)and (max-width:389px) {
+    .first h6{
+        font-size: 8px;
+    }
+
+    .first i img {
+        font-size: 8px;
+    }
+    .first img {
+        font-size: 8px;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff; 
+        position: absolute;
+        top: 18%;
+        right: 15%;
+        width: 60%;
+        z-index: 100;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    
+        
+    }
+
+    .menu.active {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .menu .list{
+        flex-direction: column;
+        align-items: start;
+       
+        
+    }
+
+    .second{
+        margin: 0 auto;
+        width: 85%;
+        
+    }
+
+    .second .logo{
+        margin-right: 15%;
+    }
+
+    .prestation {
+        margin-right: 0%;
+    }
+    .second .prestation a{
+        font-size: 8px;
+        
+        
+    }
+
+    .second .list li a{
+       
+        color: #A57014;
+        text-align: start;
+    }
+
+    .dropdown-menu {
+        position: relative !important; 
+        width: 100%; 
+        margin-top: 0% !important;
+        margin-bottom: 5px;
+        
+    }
+
+   
+    .dropdown {
+        width: 100%; 
+    }
+
+    .dropdown-menu li .dropdown-item{
+        font-family: "Brittany Signature";
+        text-decoration: underline !important;
+        color: #A57014 !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+        padding: 10px !important;
+        border-bottom:1px solid #d9d9d993 ;
+    }
+
+    .carousel-caption .Accueiltitre{
+        font-size: 14px;
+    }
+
+    .carousel-inner img{
+        height: 200px;
+    }
+
+    .contain4 .text p{
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .contain4 .text {
+        width: 25%;
+        gap: 30px;
+    }
+
+    .contain4 .text img {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+
+    .contain4 h3{
+        font-size: 28px;
+        
+    }
+
+    .contain5 h3{
+        font-size: 28px;
+        
+    }
+
+    .contain6 h3{
+        font-size: 28px;
+        
+    }
+
+    .contain7 h3{
+        font-size: 28px;
+        
+    }
+
+    .titre h3{
+        font-size:18px;
+        font-weight: 300;
+    }
+
+    .texte{
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+        
+    }
+
+    .para.expanded {
+        max-height: none;
+      }
+
+    .para{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 6); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .para1{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 8); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px !important;
+    }
+
+    .texte h3{
+        font-size: 18px !important;
+    }
+
+    .titreAchat{
+        font-size: 28px !important;
+    }
+
+    .contain7 .contact{
+        display: block;
+    }
+
+    .contact .form{
+        width: 100%;
+    }
+
+    .contact .info{
+        width: 100%;
+    }
+
+    .contact .form h3{
+        font-size: 32px !important;
+    }
+
+    .contact .info h3{
+        font-size: 32px !important;
+    }
+
+    .contact .form a{
+        font-size: 18px !important;
+    }
+
+    .read-more{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .read-more1{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .para1.expanded {
+        max-height: none;
+      }
+
+    .article .images img{
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .image1 img{
+        object-fit: cover;
+        display: block;
+    }
+
+    .perso h3{
+        text-align: center !important;
+        font-size: 30px !important;
+    }
+    
+    .message h3{
+        text-align: center !important;
+        font-size: 30px !important;
+    }
+    
+    .nom input{
+        width: 100% !important;
+    }
+    
+    .number input{
+        width: 100% !important;
+    }
+
+    select{
+        font-size: 12px !important;
+        width: 100%;
+    }
+
+    .message a{
+        font-size: 18px !important;
+        width: 30% !important;
+    }
+
+    .default{
+        font-size: 12px !important;
+    }
+    
+
+    .footer{
+        display: block;
+        padding: 1%;
+    }
+    
+    .contain8{
+        display: block;
+        width: 83%;
+        margin: 0 auto;
+        
+    }
+    
+    .gauche{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .droit{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .droit .phones {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .droit .maping {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .droit .hours {
+        padding: 0;
+    }
+
+    .footer{
+        padding: 1%;
+    }
+    
+
+    .droit .phones h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+    }
+
+    .droit .maping h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+        
+    }
+
+    .droit .hours h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+        
+    }
+    .droit h4{
+        font-size: 8px;
+        white-space: nowrap;
+        padding: 0.0rem;
+        margin-left: 12px;
+    }
+
+    .gauche h4 {
+        font-size: 8px;
+        white-space: nowrap;
+    }
+
+    .gauche img{
+        width: 100px;
+    }
+
+    .gauche .icone img{
+        width:18px;
+    }
+
+    .image1{
+        height: 200px;
+    }
+
+    .contain3 .carousel-caption .location-title{
+        font-size: 28px !important;
+    
+    }
+
+    
+}
+
+/* ----- FIN RESPONSIVE MOBILE------ */
+
+/* ----- RESPONSIVE MOBILE ------ */
+@media  screen and (min-width: 160px)and (max-width:359px) {
+    .first h6{
+        font-size: 8px;
+    }
+
+    .first i img {
+        font-size: 8px;
+    }
+    .first img {
+        font-size: 8px;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff; 
+        position: absolute;
+        top: 25%;
+        right: 15%;
+        width: 60%;
+        z-index: 100;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    
+        
+    }
+
+    .menu.active {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .menu .list{
+        flex-direction: column;
+        align-items: start;
+       
+        
+    }
+
+    .second{
+        margin: 0 auto;
+        width: 85%;
+        
+    }
+
+    .second .logo{
+        margin-right: 15%;
+    }
+
+    .prestation {
+        margin-right: 0%;
+    }
+    .second .prestation a{
+        font-size: 8px;
+        
+        
+    }
+
+    .second .list li a{
+       
+        color: #A57014;
+        text-align: start;
+    }
+
+    .dropdown-menu {
+        position: relative !important; 
+        width: 100%; 
+        margin-top: 0% !important;
+        margin-bottom: 5px;
+        
+    }
+
+   
+    .dropdown {
+        width: 100%; 
+    }
+
+    .dropdown-menu li .dropdown-item{
+        font-family: "Brittany Signature";
+        text-decoration: underline !important;
+        color: #A57014 !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+        padding: 10px !important;
+        border-bottom:1px solid #d9d9d993 ;
+    }
+
+    .carousel-caption .Accueiltitre{
+        font-size: 14px;
+    }
+
+    .carousel-inner img{
+        height: 200px;
+    }
+
+    .contain4 .text p{
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .contain4 .text {
+        width: 25%;
+        gap: 30px;
+    }
+
+    .contain4 .text img {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+
+    .contain4 h3{
+        font-size: 28px;
+        
+    }
+
+    .contain5 h3{
+        font-size: 28px;
+        
+    }
+
+    .contain6 h3{
+        font-size: 28px;
+        
+    }
+
+    .contain7 h3{
+        font-size: 28px;
+        
+    }
+
+    .titre h3{
+        font-size:18px;
+        font-weight: 300;
+    }
+
+    .texte{
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+        
+    }
+
+    .texte h3{
+        font-size: 18px !important;
+    }
+
+    .contain7 .contact{
+        display: block;
+    }
+
+    .contact .form{
+        width: 100%;
+    }
+
+    .contact .info{
+        width: 100%;
+    }
+
+    .contact .form h3{
+        font-size: 28px !important;
+    }
+
+    .contact .info h3{
+        font-size: 28px !important;
+    }
+    
+    .contact .form a{
+        font-size: 14px !important;
+    }
+
+    .perso h3{
+        text-align: center !important;
+        font-size: 28px !important;
+    }
+    
+    .message h3{
+        text-align: center !important;
+        font-size: 28px !important;
+    }
+    
+    .nom input{
+        width: 100% !important;
+    }
+    
+    .number input{
+        width: 100% !important;
+    }
+
+    .message{
+        overflow: hidden;
+    }
+
+    select{
+        font-size: 12px !important;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 10px !important;
+    }
+
+    .message a{
+        font-size: 18px !important;
+        width: 35% !important;
+    }
+
+    .default{
+        font-size: 12px !important;
+    }
+    
+
+
+    .para.expanded {
+        max-height: none;
+      }
+
+    .para{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 6); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .para1{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 8); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px !important;
+    }
+
+    .titreAchat{
+        font-size: 28px !important;
+    }
+
+    .read-more{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .read-more1{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .para1.expanded {
+        max-height: none;
+      }
+
+    .image1 img{
+        object-fit: cover;
+        display: block;
+    }
+
+    .image1{
+        height: 200px;
+    }
+
+    .article .images img{
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .droit .phones h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+    }
+
+    .droit .maping h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+        
+    }
+
+    .droit .hours h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0rem
+        
+    }
+    .droit h4{
+        font-size: 8px;
+        white-space: nowrap;
+        padding: 0rem;
+        margin-left: 12px;
+    }
+
+    .gauche h4 {
+        font-size: 8px;
+        white-space: nowrap;
+    }
+
+    .gauche img{
+        width: 100px;
+    }
+
+    .gauche .icone img{
+        width:18px;
+    }
+
+    .contain3 .carousel-caption .location-title{
+        font-size: 28px !important;
+    
+    }
+    .footer{
+        display: block;
+        padding: 1%;
+    }
+    
+    .contain8{
+        display: block;
+        width: 83%;
+        margin: 0 auto;
+        
+    }
+    
+    .gauche{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .droit{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .droit .phones {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .droit .maping {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .droit .hours {
+        padding: 0;
+    }
+}
+
+/* ----- FIN RESPONSIVE MOBILE------ */
+
+
+/* ----- RESPONSIVE MOBILE1 ------ */
+@media  screen and (min-width: 390px)and (max-width:499px) {
+    .first h6{
+        font-size: 8px;
+    }
+
+    .first i img {
+        font-size: 10px;
+    }
+    .first img {
+        font-size: 10px;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff; 
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        width: 50%;
+        z-index: 100;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        
+        
+    }
+
+    .menu.active {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .menu .list{
+        flex-direction: column;
+        align-items: start;
+       
+        
+    }
+
+    .second{
+        margin: 0 auto;
+        width: 85%;
+        
+    }
+
+    .second .logo{
+        margin-right: 30%;
+    }
+
+    .prestation {
+        margin-right: 0%;
+    }
+    .second .prestation a{
+        font-size: 8px;
+        
+        
+    }
+
+    .second .list li a{
+       
+        color: #A57014;
+        text-align: start;
+    }
+
+    .dropdown-menu {
+        position: relative !important; 
+        width: 100%; 
+        margin-top: 0% !important;
+        margin-bottom: 5px;
+        
+    }
+
+   
+    .dropdown {
+        width: 100%; 
+    }
+
+    .dropdown-menu li .dropdown-item{
+        font-family: "Brittany Signature";
+        text-decoration: underline !important;
+        color: #A57014 !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+        padding: 10px !important;
+        border-bottom:1px solid #d9d9d993 ;
+    }
+
+    .carousel-caption .Accueiltitre {
+        font-size: 24px;
+    }
+
+    .carousel-inner img{
+        height: 300px;
+    }
+
+    .contain4 .text p{
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .contain4 .text {
+        width: 25%;
+        gap: 30px;
+    }
+
+    .contain4 .text img {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+
+    .contain4 h3{
+        font-size: 36px;
+        
+    }
+
+    .contain5 h3{
+        font-size: 36px;
+        
+    }
+
+    .contain6 h3{
+        font-size: 36px;
+        
+    }
+
+    .contain7 h3{
+        font-size: 36px;
+        
+    }
+
+    .titre h3{
+        font-size:18px;
+        font-weight: 300;
+    }
+
+    .texte{
+        font-size: 12px;
+        font-weight: 300;
+        position: relative;
+        
+    }
+
+    .texte h3{
+        font-size: 18px !important;
+    }
+
+    .titreAchat{
+        font-size: 28px !important;
+    }
+
+    .image1 img{
+        object-fit: cover;
+        display: block;
+    }
+
+    .image1{
+        height: 200px;
+    }
+
+    .para.expanded {
+        max-height: none;
+      }
+
+    .para{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 6); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .para1{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 8); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px !important;
+    }
+
+    .read-more{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .read-more1{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .para1.expanded {
+        max-height: none;
+      }
+
+    .article .images img{
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .location-title{
+        font-size: 32px !important;
+        white-space: nowrap;
+    }
+
+    .contain7 .contact{
+        display: block;
+    }
+
+    .contact .form{
+        width: 100%;
+    }
+
+    .contact .info{
+        width: 100%;
+    }
+
+    .contact .form h3{
+        font-size: 32px !important;
+    }
+
+    .contact .info h3{
+        font-size: 32px !important;
+    }
+
+    .perso h3{
+        text-align: center !important;
+        font-size: 32px !important;
+    }
+    
+    .message h3{
+        text-align: center !important;
+        font-size: 32px !important;
+    }
+    
+    .nom input{
+        width: 100% !important;
+    }
+    
+    .number input{
+        width: 100% !important;
+    }
+
+    select{
+        font-size: 12px !important;
+        width: 100%;
+    }
+
+    .message a{
+        font-size: 18px !important;
+        width: 30% !important;
+    }
+
+    .default{
+        font-size: 12px !important;
+    }
+
+
+    .footer{
+        display: block;
+        padding: 1%;
+    }
+    
+    .contain8{
+        display: block;
+        width: 83%;
+        margin: 0 auto;
+        
+    }
+    
+    .gauche{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .droit{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .droit .phones {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .droit .maping {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .droit .hours {
+        padding: 0;
+    }
+    
+    
+
+    .droit .phones h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+    }
+
+    .droit .maping h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+        
+    }
+
+    .droit .hours h6{
+        font-weight: bold;
+        font-size: 8px;
+        padding: 0.0rem;
+        
+    }
+    .droit h4{
+        font-size: 10px;
+        white-space: nowrap;
+        padding: 0.0rem;
+        margin-left: 12px;
+    }
+
+    .gauche h4 {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .gauche img{
+        width: 100px;
+    }
+
+    .gauche .icone img{
+        width:18px;
+    }
+
+   
+}
+
+/* ----- FIN RESPONSIVE MOBILE1------ */
+
+
+/* ----- RESPONSIVE MOBILE2 ------ */
+@media  screen and (min-width: 499px)and (max-width:729px) {
+    .first h6{
+        font-size: 10px;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff; /* Fond du menu */
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        width: 40%;
+        z-index: 100;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        
+        
+    }
+
+    .menu.active {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .menu .list{
+        flex-direction: column;
+        align-items: start;
+       
+        
+    }
+
+    .second{
+        margin: 0 auto;
+        width: 85%;
+        
+    }
+
+    .second .logo{
+        margin-right: 54%;
+    }
+
+    .prestation {
+        margin-right: 0%;
+    }
+    .second .prestation a{
+        font-size: 8px;
+        
+        
+    }
+
+    .second .list li a{
+       
+        color: #A57014;
+        text-align: start;
+    }
+
+    .dropdown-menu {
+        position: relative !important; 
+        width: 100%; 
+        margin-top: 0% !important;
+        margin-bottom: 5px;
+        
+    }
+
+   
+    .dropdown {
+        width: 100%; 
+    }
+
+    .dropdown-menu li .dropdown-item{
+        font-family: "Brittany Signature";
+        text-decoration: underline !important;
+        color: #A57014 !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+        padding: 10px !important;
+        border-bottom:1px solid #d9d9d993 ;
+    }
+
+    .carousel-caption .Accueiltitre {
+        font-size: 38px;
+    }
+
+    .contain4 .text p{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .contain4 .text {
+        width: 30%;
+        gap: 20px;
+    }
+
+    .contain4 h3{
+        font-size: 48px;
+        
+    }
+
+    .contain5 h3{
+        font-size: 48px;
+        
+    }
+
+    .contain6 h3{
+        font-size: 48px;
+        
+    }
+
+    .contain7 h3{
+        font-size: 48px;
+        
+    }
+
+    .titre h3{
+        font-size:24px;
+        font-weight: 400;
+    }
+
+    .texte{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .para.expanded {
+        max-height: none;
+      }
+
+    .para{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 6); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .para1{
+        line-height: 1.5; 
+        max-height: calc(1.5em * 8); 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .read-more{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .read-more1{
+        display: block !important;
+        background-color: #7B3C1C !important;
+        color: white;
+        padding: 5px 8px 5px 8px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .para1.expanded {
+        max-height: none;
+      }
+
+
+    .image1 img{
+        object-fit: cover;
+        display: block;
+    }
+
+    .image1{
+        height: 200px;
+    }
+
+    .article .images img{
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    
+    .droit .phones h6{
+        font-weight: bold;
+        font-size: 10px;
+        
+    }
+
+    .droit .maping h6{
+        font-weight: bold;
+        font-size: 10px;
+        
+    }
+
+    .droit .hours h6{
+        font-weight: bold;
+        font-size: 10px;
+        
+    }
+    .droit h4{
+        font-size: 14px;
+    }
+
+    .gauche h4 {
+        font-size: 16px;
+    }
+
+    .gauche img{
+        width: 150px;
+    }
+
+    .gauche .icone img{
+        width:24px;
+    }
+}
+
+/* ----- FIN RESPONSIVE MOBILE2------ */
+
+/* --------------------------------
+-----------FIN ACCUEIL-------------
+----------------------------------- */
+
+
+/* --------------------------------
+-----------LOCATION IMMOBILIER-------------
+----------------------------------- */
+
+.carousel-item .overlayLocation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.location img{
+    max-height: 350px;
+}
+
+.location-title{
+    text-align: center;
+    padding: 0%;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 0;
+    font-weight: initial;
+    color: white;
+    font-size: 80px;
+    font-family: "Brittany Signature";
+  
+}
+
+.contain9{
+    width: 83%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cadre{
+    background-color: rgb(217, 217, 217, 0.4);
+    
+}
+.cadre h5{
+    text-align: center;
+    padding: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.cadre .carousel-indicators {
+   
+   display: flex;
+   justify-content: center;
+   top: 100%;
+   gap: 5px; 
+   margin-bottom: none;
+   margin-top: 5%;
+}
+
+.cadre .carousel-indicators button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50% !important;
+    background-color: #A57014;
+    border: none;
+}
+
+#productCarousel{
+    height: 150px;
+    width: 90%;
+    margin:0 auto;
+    
+}
+
+.product{
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+.product img{
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    display: block;
+   
+}
+
+.description{
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.description p{
+    object-fit: cover;
+}
+
+.price{
+    text-align: center;
+    color: #A57014;
+    font-weight:bolder;
+    padding-top: 0.5rem;
+    font-size: large;
+    margin-bottom: 15%;
+}
+
+.cadre a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #7B3C1C;
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+
+.cadre a:hover{
+    background-color: #DFB70E;
+}
+
+
+/* --------------------------------------------
+-----------FIN LOCATION IMMOBILIER-------------
+----------------------------------- */
+
+
+/* --------------------------------------------
+-----------PERSONNALISATION-------------
+----------------------------------- */
+
+.texte h3{
+    font-size: 48px;
+    color: black;
+    text-align: start;
+}
+
+.texte p {
+    font-size: 20px;
+}
+
+.left-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    object-fit: cover;
+}
+
+.left-image img{
+   width: 100%;
+   height: 100%;
+  
+}
+
+.right-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    object-fit: cover;
+    
+}
+
+.right-img img{
+    width: 100%;
+    height:100%;
+    border-radius: 15px;
+}
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    overflow: hidden;
+    height:auto
+}
+/* --------------------------------------------
+-----------FIN PERSONNALISATION-------------
+----------------------------------- */
+
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+
+.form, .info  {
+    width: 50%;
+    padding: 1rem;
+
+}
+
+.contact .form h3{
+    font-size: 48px;
+    color: #000;
+    padding: 1rem;
+}
+
+
+.contact .info h3{
+    font-size: 48px;
+    color: #000;
+    padding: 1rem;
+}
+
+.contact .info p{
+    padding: 1rem 0rem 1rem 0rem;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.contact .form input, textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.contact .form a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #7B3C1C;
+    margin: 0;
+    width: 50%;
+    display: block;
+}
+
+.perso{
+    width: 100%;
+    
+    
+}
+
+.perso h3{
+    text-align: start;
+    font-size: 48px;
+    color: #000;
+    font-weight: 100;
+}
+
+.message h3{
+    text-align: start;
+    font-size: 48px;
+    color: #000;
+    font-weight: 100;
+}
+
+.nom input{
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgb(217, 217, 217);
+    margin-left: 7px;
+}
+
+.number input{
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgb(217, 217, 217);
+    margin-left: 7px;
+}
+
+select{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(217, 217, 217);
+    background-color: white;
+
+}
+
+
+.message a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #7B3C1C;
+    margin: 0;
+    width: 20%;
+    display: block;
+}
